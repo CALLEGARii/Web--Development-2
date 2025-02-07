@@ -45,6 +45,16 @@ input{
     height: 2vh;
 }
 
-.list{
+
+ul{
+
+    margin-top: 5vh;
+    margin-left: 5vh;
     
+}
+
+li{
+    padding-bottom: 2vh;
+    padding-bottom: 2vh;
+    font-size: 25px;
 }
