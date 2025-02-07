@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: end;    
+    background-color: rgb(123, 159, 187);
+}
+
+a{
+    margin: 2vh;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    
+}
+a:hover{
+    background-color: rgb(197, 197, 197);
+    
+}
+
+div{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10vh;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+span{
+    background-color: yellow;
+}
