@@ -1,0 +1,54 @@
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(123, 159, 187);
+}
+
+a {
+    margin: 2vh;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.img-custom {
+    border: 3px solid blue;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.text-decoration-underline{
+    color: rgb(0, 0, 179);
+}

@@ -13,6 +13,8 @@ a{
 }
 a:hover{
     background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+    font-weight: bold;
     
 }
 
@@ -42,7 +44,7 @@ p{
 input{
     padding: 5px;
     font-size: larger;
-    height: 2vh;
+    height: 3vh;
 }
 
 
@@ -57,4 +59,23 @@ li{
     padding-bottom: 2vh;
     padding-bottom: 2vh;
     font-size: 25px;
+}
+
+span{
+    text-decoration: underline;
+    color: rgb(0, 0, 161);
+}
+
+.green{
+    background-color: green;
+}
+
+a:hover{
+    background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+    
+}
+
+.busca{
+    text-decoration: underline;
 }

@@ -1,0 +1,32 @@
+a:hover {
+    background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(123, 159, 187);
+}
+
+a {
+    margin: 2vh;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+div {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5vh;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        text-align: center;
+    }
+}

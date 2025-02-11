@@ -13,6 +13,8 @@ a{
 }
 a:hover{
     background-color: rgb(197, 197, 197);
+    text-decoration: underline;
+    font-weight: bold;
     
 }
 
