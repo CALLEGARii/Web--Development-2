@@ -1,0 +1,18 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.form-container {
+    flex: 1;
+    max-width: 100vh;
+}
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+.image-container img {
+    max-width: 350px;
+}
