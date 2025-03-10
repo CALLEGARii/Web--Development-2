@@ -29,8 +29,8 @@
     <ul class="list-group">
     <li class="list-group-item">1. <a href="tabuada/index.php">Praticando Tabuada</a></li>
     <li class="list-group-item">2. <a href="http://localhost/Menu/contador/index.php">Praticando Contador</a></li>
-    <li class="list-group-item">3. <a href="">Praticando Números primos</a></li>
-    <li class="list-group-item">4. <a href="">Praticando Gerador de tabela</a></li>
+    <li class="list-group-item">3. <a href="http://localhost/Menu/primo/index.php">Praticando Números primos</a></li>
+    <li class="list-group-item">4. <a href="http://localhost/Menu/Tabela/index.php">Praticando Gerador de tabela</a></li>
 </ul>
 
 </body>

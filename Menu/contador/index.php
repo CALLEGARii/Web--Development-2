@@ -37,6 +37,7 @@
             <button type="reset" class="btn btn-warning">Limpar</button>
         </div>
     </form>
-    
+    <br>
+    <a href="http://localhost/Menu/index.php">Menu Principal</a>
 </body>
 </html>
