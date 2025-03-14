@@ -37,6 +37,7 @@
                 </svg>
                 <span class="fs-4">Simple header</span>
             </a>
+            
 
             <?php include '../menu/menu.php'; ?>
         </header>
