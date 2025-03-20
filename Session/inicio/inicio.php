@@ -1,5 +1,6 @@
 <?php
-    require_once 'header.php';
+    session_start();
+    require '../componentes/header.php';
     ?>
 
 <div class="inicio">
@@ -17,8 +18,19 @@
                 Quisque imperdiet purus vel felis vulputate, quis sollicitudin enim volutpat. Curabitur elementum urna dolor. Nulla suscipit leo sit amet erat egestas commodo. Ut accumsan turpis eu justo placerat, vitae consequat ipsum suscipit. Nunc et fringilla nunc. Nullam ut lobortis nulla. Cras euismod turpis posuere sapien ornare, nec lobortis libero rhoncus. Phasellus mauris lorem, eleifend eget tincidunt quis, varius eu est. Fusce metus risus, lobortis eget justo nec, condimentum ullamcorper augue. Phasellus sollicitudin magna non euismod elementum. Proin sodales venenatis vulputate. Cras a turpis lacus. Aliquam sit amet maximus magna. Integer nec nibh ipsum. Etiam quis lacus at nisi scelerisque mattis sit amet et elit. Donec vulputate dignissim nunc id euismod.
             </p>
 
+            <?php
+            if(isset($_SESSION['erro']) && !empty($_SESSION['erro'])){
+            ?>
+            <div class="alert alert-warning" role="alert">
+                <?php echo $_SESSION['erro']; ?>
+            </div>
+            <?php
+            unset($_SESSION['erro']);
+            }
+            ?>
+
         </div>
             <hr>
 <?php
-    require_once 'footer.php';
+    require '../componentes/footer.php';
     ?>

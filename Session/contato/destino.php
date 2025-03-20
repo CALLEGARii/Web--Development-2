@@ -1,5 +1,5 @@
 <?php
-require_once 'header.php';
+require_once '../componentes/header.php';
 ?>
 
 <div class="inicio">
@@ -47,5 +47,5 @@ require_once 'header.php';
 </div>
 <hr>
 <?php
-require_once 'footer.php';
+require_once '../componentes/footer.php';
 ?>

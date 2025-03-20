@@ -1,5 +1,6 @@
 <?php
-    require_once 'header.php';
+session_start();
+    require_once '../componentes/header.php';
 ?>
 
 <div class="inicio">
@@ -28,5 +29,5 @@
 
 <hr>
 <?php
-    require_once 'footer.php';
+    require_once '../componentes/footer.php';
 ?>
