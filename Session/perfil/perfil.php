@@ -1,5 +1,10 @@
 <?php
 session_start();
+date_default_timezone_set('America/Sao_Paulo');
+if(!isset ($_SESSION['user']) && empty($_SESSION['user'])){
+    $_SESSION["erro"] = "Você está tentando acessar conteúdo restrito. Faça login para continuar.";
+    header('Location: ../inicio/inicio.php');
+}
 require '../componentes/header.php';
 ?>
 
