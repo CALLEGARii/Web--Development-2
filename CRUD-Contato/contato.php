@@ -1,5 +1,5 @@
 <?php
-require 'header.php'
+require 'header.php';
 ?>
 
 <div class="inicio">
@@ -19,25 +19,24 @@ require 'header.php'
                 <div class="col-6">
                     <div class="mb-2">
                         <label for="email">E-mail</label>
-                        <input class="form-control" type="email" id="email" placeholder="Digite seu email" required>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu email" required>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="mb-2">
                         <label for="email">Mensagem</label>
-                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required></textarea>
+                        <textarea class="form-control" type="text" name="mensagem" id="msg" cols="30" rows="3" required></textarea>
                     </div>
                 </div>
 
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                     <button type="reset" class="btn btn-warning">Limpar</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
 <?php
-require 'footer.php'
+require 'footer.php';
 ?>

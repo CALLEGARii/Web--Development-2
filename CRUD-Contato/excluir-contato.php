@@ -1,5 +1,5 @@
 <?php
-require 'eader.php'
+require 'header.php';
 ?>
 <div class="inicio">
     <div class="bg-light p-4 mb-4 rounded">
@@ -7,21 +7,21 @@ require 'eader.php'
     </div>
     <div class="row">
         <?php
-        $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+        $id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_NUMBER_INT);
 
         require "conexao.php";
 
-        $sql = "delete from contato where 1D = ?";
+        $sql = "delete from contato where id = ?";
 
         try {
             $stmt = $conn->prepare($sql);
             $result = $stmt->execute([$id]);
         } catch (Exception $e) {
-            $result = false;
+            $result == false;
             $error = $e->getMessage();
         }
 
-        if ($result == true) {
+        if ($result === true) {
         ?>
             <div class="alert alert-success" role="alert">
                 <h4>Registro apagado com sucesso!</h4>
@@ -37,9 +37,9 @@ require 'eader.php'
         }
         ?>
     </div>
-    <a href="listage.php" class="btn btn-info ms-5" role="button">Voltar</a>
+    <a href="listagem.php" class="btn btn-info ms-5" role="button">Voltar</a>
 </div>
 
 <?php
-require 'footer.php'
+require 'footer.php';
 ?>

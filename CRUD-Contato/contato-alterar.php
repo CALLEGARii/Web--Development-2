@@ -15,7 +15,7 @@ if(empty($id)){
     exit;
 }
 
-$sql = "select nome,
+$sql = "select nome, email, mensagem,
                 DATE_FORMAT(datahora, '%d/%m/%Y %H:%i:%s') as datahora 
         FROM contato where ID = ?";
 $stmt = $conn->prepare($sql);

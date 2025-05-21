@@ -14,7 +14,7 @@ require 'header.php'
         $id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_NUMBER_INT);
         $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
         $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-        $msg = filter_input(INPUT_POST, "msg", FILTER_SANITIZE_NUMBER_INT);
+        $msg = filter_input(INPUT_POST, "mensagem", FILTER_SANITIZE_SPECIAL_CHARS);
 
         echo "<p>ID: $id</p>";
         echo "<p>Nome informado: $nome</p>";
@@ -23,7 +23,7 @@ require 'header.php'
 
         require "conexao.php";
 
-        $sql = "update contato SET nome = ?, email = ?, mensagem = ? where id = ?";
+        $sql = "update contato SET nome = ?, email = ?, mensagem = ? from contato where id = ?";
 
         try {
             $stmt = $conn->prepare($sql);
@@ -54,5 +54,5 @@ require 'header.php'
 </div>
 
 <?php
-require 'footer.php'
+require 'footer.php';
 ?>

@@ -1,5 +1,5 @@
 <?php
-require 'header.php'
+require 'header.php';
 ?>
 <div class="inicio">
     <div class="bg-light p-4 mb-4 rounded">
@@ -10,7 +10,7 @@ require 'header.php'
 
     $sql = "select id, nome, email, mensagem, 
                     DATE_FORMAT(datahora, '%d/%m/%Y %H:%i:%s') as datahora 
-            FROM contato order by id";
+            from contato order by id";
     $stmt = $conn->query($sql);
 
     $count = $stmt->rowCount();
@@ -42,9 +42,9 @@ require 'header.php'
                     ?>
                         <tr>
                             <td><?= $row['id'] ?></td>
-                            <td><?= $row['nome '] ?></td>
-                            <td><?= $row[' email'] ?></td>
-                            <td><?= $row['mensagem'] ?></td>
+                            <td><?= $row['nome'] ?></td>
+                            <td><?= $row['email'] ?></td>
+                            <td><?= $row['mensagem'] ?></td>    
                             <td class="text-center"><?= $row['datahora'] ?></td>
                             <td>
                                 <a class="btn btn-sm btn-warning" 
@@ -55,7 +55,7 @@ require 'header.php'
                             </td>
                             <td>
                                 <a class="btn btn-sm btn-danger" 
-                                    href="excluir-contato.php?id=<?php $row['id']; ?>" 
+                                    href="excluir-contato.php?id=<?= $row['id']; ?>" 
                                     onclick="if(!confirm('Tem certeza que deseja excluir?')) return false;">
                                     <span data-feather="trash-2"></span>
                                     Excluir
@@ -73,5 +73,5 @@ require 'header.php'
     ?>
 </div>
 <?php
-require 'footer.php'
+require 'footer.php';
 ?>
