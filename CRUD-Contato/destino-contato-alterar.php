@@ -20,10 +20,12 @@ require 'header.php'
         echo "<p>Nome informado: $nome</p>";
         echo "<p>Email: $email</p>";
         echo "<p>mensagem: $msg</p>";
+        echo "<p>Data: " . date("d/m/Y - H:i:s") . "</p>";
+
 
         require "conexao.php";
 
-        $sql = "update contato SET nome = ?, email = ?, mensagem = ? from contato where id = ?";
+        $sql = "update contato SET nome = ?, email = ?, mensagem = ? where id = ?";
 
         try {
             $stmt = $conn->prepare($sql);

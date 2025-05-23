@@ -24,7 +24,7 @@ require 'header.php';
                 </div>
                 <div class="col-12">
                     <div class="mb-2">
-                        <label for="email">Mensagem</label>
+                        <label for="mensagem">Mensagem</label>
                         <textarea class="form-control" type="text" name="mensagem" id="msg" cols="30" rows="3" required></textarea>
                     </div>
                 </div>

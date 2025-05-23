@@ -8,6 +8,9 @@ require 'header.php';
     <div class="row">
         <?php
         $id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_NUMBER_INT);
+        if (!$id) {
+        $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+        }
 
         require "conexao.php";
 
@@ -17,11 +20,11 @@ require 'header.php';
             $stmt = $conn->prepare($sql);
             $result = $stmt->execute([$id]);
         } catch (Exception $e) {
-            $result == false;
+            $result = false;
             $error = $e->getMessage();
         }
 
-        if ($result === true) {
+        if ($result == true) {
         ?>
             <div class="alert alert-success" role="alert">
                 <h4>Registro apagado com sucesso!</h4>

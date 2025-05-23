@@ -31,7 +31,7 @@ $registroContato = $stmt->fetch();
 
     <div class="row">
         <div class="col-8 offset-2">
-            <form class="row g-3" action="destino-contato.php" method="POST">
+            <form class="row g-3" action="destino-contato-alterar.php" method="POST">
                 <input type="hidden" name="id" value="<?=$id?>">
                 <div class="col-6">
                     <div class="mb-2">
@@ -49,13 +49,13 @@ $registroContato = $stmt->fetch();
                 </div>
                 <div class="col-12">
                     <div class="mb-2">
-                        <label for="email">Mensagem</label>
-                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required><?=$registroContato["mensagem"]?></textarea>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" name="mensagem" id="msg" cols="30" rows="3" required><?=$registroContato["mensagem"]?></textarea>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="mb-2">
-                        <label for="email">Data/Hora</label>
+                        <label for="datahora">Data/Hora</label>
                         <input class="form-control" type="text" name="datahora" id="datahora" disabled value="<?=$registroContato["datahora"]?>">
                     </div>
                 </div>
